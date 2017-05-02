@@ -25,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [WXApiManager sharedManager].delegate = self;
 }
 
 
@@ -36,7 +37,7 @@
 - (IBAction)ShareBtnClick:(id)sender {
     //    NSArray *titlearr = @[@"微信朋友圈",@"微信好友",@"微信朋友圈",@"微信好友",@"微信朋友圈",@"微信好友",@"微信朋友圈",@"微信好友",@"微信朋友圈"];
     //    NSArray *imageArr = @[@"wechatquan",@"wechat",@"tcentQQ",@"tcentkongjian",@"wechatquan",@"wechat",@"wechatquan",@"wechat",@"tcentQQ"];
-    NSArray *titlearr = @[@"微信朋友圈",@"微信好友",@"CtripTeam",@"复制链接"];
+    NSArray *titlearr = @[@"微信朋友圈",@"微信好友",@"QQ",@"复制链接"];
     NSArray *imageArr = @[@"wechatquan",@"wechat",@"tcentQQ",@"copyUrl"];
     
     ActionSheetView *actionsheet = [[ActionSheetView alloc] initWithShareHeadOprationWith:titlearr andImageArry:imageArr andProTitle:@"测试" and:ShowTypeIsShareStyle];
