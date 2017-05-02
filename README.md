@@ -17,12 +17,12 @@ https://github.com/GeekZP/ZPActionSheet
 
 	a、导入如下几个库
 
-![image](https://github.com/SvenDai/SvenDaiSocialShare/blob/master/ScreenShots/lib.png)
+![image](https://github.com/SvenDai/SvenDaiSocialShare/blob/master/ScreenShots/urltype.png)
 	
 	b、在appdelagete.m中向微信注册appid（在微信开放平台申请获得）,设置微信返回app时的handleopenurl
 
 	c、在info中添加一条url scheme
 	
-![image](https://github.com/SvenDai/SvenDaiSocialShare/blob/master/ScreenShots/urltype.png)
+![image](https://github.com/SvenDai/SvenDaiSocialShare/blob/master/ScreenShots/lib.png)
 
 	d、在Other Link Flags 中加入 -Objc 和-all_load
